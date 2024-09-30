@@ -1,7 +1,7 @@
-# ES6 Basics
+# ES6 - Backend Specialization
 
 ## Description
-> This projects focuses on the basics of ES6 in JavaScript. The main focus is to understand the essentials of ES6 and required in the work field as part of the requirements of the curriuculum in ALX Software Engineering Program.
+> This projects focuses on the fundamentals of ES6 in JavaScript. The main focus is to understand the essentials of ES6 and required in the work field as part of the requirements of the curriuculum in ALX Software Engineering Program.
 
 ## Requirements
 - OS: `Ubuntu 18.04 LTS`
