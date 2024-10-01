@@ -3,11 +3,14 @@ module.exports = {
     browser: false,
     es6: true,
     jest: true,
+
+
   },
-  extends: [
+    extends: [
     'airbnb-base',
     'plugin:jest/all',
-  ],
+
+    ],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
