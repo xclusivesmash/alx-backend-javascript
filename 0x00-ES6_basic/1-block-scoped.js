@@ -1,7 +1,5 @@
-/* prevent overwriting block level variables
- * eslint-disable no-unused-vars
- * eslint-disable no-vars
- */
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-vars */
 export default function taskBlock(trueOrFalse) {
     var task = false;
     var task2 = true;
