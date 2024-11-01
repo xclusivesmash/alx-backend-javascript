@@ -1,9 +1,6 @@
 import ClassRoom from './0-classroom';
 
+/* initializes instances of a class */
 export default function initializeRooms() {
-  const myClasses = [];
-  myClasses.push(new ClassRoom(19));
-  myClasses.push(new ClassRoom(20));
-  myClasses.push(new ClassRoom(64));
-  return myClasses;
+  return [19, 20, 34].map((number) => new ClassRoom(number));
 }
