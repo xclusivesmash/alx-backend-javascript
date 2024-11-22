@@ -25,7 +25,7 @@ export class Director implements DirectorInterface {
   }
 }
 
-// teacher class
+  // teacher class
 export class Teacher implements TeacherInterface {
   workFromHome(): string {
     return "Cannot work from home";
@@ -44,4 +44,24 @@ export function createEmployee(salary: (number | string)): (Director | Teacher) 
     return new Teacher();
   }
   return new Director();
+}
+
+export function isDirector(employee: (Director | Teacher)) {
+  return employee instanceof Director;
+}
+
+export function executeWork(employee: (Director | Teacher)) {
+  if (isDirector(employee)) {
+    return (employee as Director).workDirectorTasks();
+  }
+  return (employee as Teacher).workTeacherTasks();
+}
+
+export type Subjects = ("Math" | "History");
+export function teachClass(todayClass: string): string {
+  if (todayClass === "Math") {
+    return "Teaching Math";
+  } else {
+    return "Teaching History";
+  }
 }
